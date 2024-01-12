@@ -1,43 +1,43 @@
 #Program Demonstrate Create, UPDATE, DELETE, PUT, POST,GET method using spring boot,
 
-GET : http://localhost:8080/api/v1/employees
+Method: GET
+http://localhost:8080/api/v1/employees
 
-RequestBody: 
+Request body:
 
+Response body:
 
-
-ResponseBody: 
-
-      [
-    {
-        "id": 4,
-        "name": "Mark",
-        "age": 25,
-        "address": "Rich-Mond                                         ",
-        "salary": 65000
-    },
-    {
-        "id": 10,
-        "name": "Abhishek",
+[
+{
+        "id": 12,
+        "name": "Rajesh",
         "age": 26,
-        "address": "Udupi                                             ",
+        "address": "Udupi",
         "salary": 0
     },
     {
+        "id": 4,
+        "name": "Satyesh",
+        "age": 25,
+        "address": "Malpe",
+        "salary": 65000
+    },
+    {
         "id": 3,
-        "name": "Chethan",
+        "name": "Harish",
         "age": 32,
-        "address": "California                                        ",
+        "address": "Manipal",
         "salary": 15000
     },
     {
         "id": 11,
-        "name": "Abhishek",
-        "age": 26,
-        "address": "Udupi                                             ",
+        "name": "Raj",
+        "age": 28,
+        "address": "Kodibengre",
         "salary": 0
     }
 ]
+
 
 GET :http://localhost:8080/api/v1/employees/4
 
