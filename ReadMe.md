@@ -65,11 +65,11 @@ http://localhost:8080/api/v1/employees
 
 Request Body: 
 {
-    "id": "18",
-    "name": "Rudresh",
-    "age": 28,
-    "address": "Udupi",
-    "salary": "45000"
+    "id": "4",
+    "name": "Satyesh",
+    "age": 25,
+    "address": "Malpe",
+    "salary": "65000"
 }
 
 Response Body:
@@ -81,9 +81,9 @@ Response Body:
     }
 ]
 
-![Screenshot from 2024-01-11 00-33-42](https://github.com/Sharathrao-Appmod/Assignment3-API/assets/155999647/4fa169f2-f0a7-4158-93e4-12031f3e5761)
+![Screenshot from 2024-01-11 00-31-09](https://github.com/Sharathrao-Appmod/Assignment3-API/assets/155999647/f0c53866-73b2-41af-a007-34d03d792fe7)
 
-  
+
 Method: PUT
 http://localhost:8080/api/v1/employees/3
 
