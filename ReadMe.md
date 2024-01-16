@@ -1,103 +1,94 @@
 #Program Demonstrate Create, UPDATE, DELETE, PUT, POST,GET method using spring boot,
 
-Method: GET
-http://localhost:8080/api/v1/employees
+GET : http://localhost:8080/api/v1/employees
 
-Request body:
+RequestBody: 
 
-Response body:
 
-[
-{
-        "id": 12,
-        "name": "Rajesh",
-        "age": 26,
-        "address": "Udupi",
-        "salary": 0
-    },
+
+ResponseBody: 
+
+      [
     {
         "id": 4,
-        "name": "Satyesh",
+        "name": "Mark",
         "age": 25,
-        "address": "Malpe",
+        "address": "Rich-Mond                                         ",
         "salary": 65000
     },
     {
+        "id": 10,
+        "name": "Abhishek",
+        "age": 26,
+        "address": "Udupi                                             ",
+        "salary": 0
+    },
+    {
         "id": 3,
-        "name": "Harish",
+        "name": "Chethan",
         "age": 32,
-        "address": "Manipal",
+        "address": "California                                        ",
         "salary": 15000
     },
     {
         "id": 11,
-        "name": "Raj",
-        "age": 28,
-        "address": "Kodibengre",
+        "name": "Abhishek",
+        "age": 26,
+        "address": "Udupi                                             ",
         "salary": 0
     }
 ]
 
-![Screenshot from 2024-01-11 00-48-29](https://github.com/Sharathrao-Appmod/Assignment3-API/assets/155999647/23d78592-937e-4508-afee-d3365a583f1f)
+GET :http://localhost:8080/api/v1/employees/4
+
+RequestBody: 
 
 
+ResponseBody: 
 
-Method: GET
-http://localhost:8080/api/v1/employees/4
-
-Request Body: 
-
-
-Response Body:
 {
     "id": 4,
-    "name": "Satyesh",
+    "name": "Mark",
     "age": 25,
-    "address": "Malpe",
+    "address": "Rich-Mond                                         ",
     "salary": 65000
 }
 
-![Screenshot from 2024-01-11 01-04-22](https://github.com/Sharathrao-Appmod/Assignment3-API/assets/155999647/639ff1ec-50e9-4c69-b32d-eb4d9b54340f)
 
+POST: http://localhost:8080/api/v1/employees
+RequestBody: 
 
-Method: POST
-http://localhost:8080/api/v1/employees
-
-Request Body: 
 {
-    "id": "4",
-    "name": "Satyesh",
-    "age": 25,
-    "address": "Malpe",
-    "salary": "65000"
+    "id": "12",
+    "name": "Abhishek",
+    "age": 26,
+    "address": "Udupi",
+    "salary": "00000"
 }
 
-Response Body:
-[
+ResponseBody: 
+  [
     {
         "statusCode": "200",
         "statusMessage": "Record Inserted",
         "errorDescription": null
     }
-]
-
-![Screenshot from 2024-01-11 00-31-09](https://github.com/Sharathrao-Appmod/Assignment3-API/assets/155999647/f0c53866-73b2-41af-a007-34d03d792fe7)
-
-
-Method: PUT
-http://localhost:8080/api/v1/employees/3
-
-Request Body:
+  ]
+  
+  
+ PUT:  http://localhost:8080/api/v1/employees/12
  
-{
-    "id": 3,
-    "name": "Hardeep",
-    "age": 33,
-    "address": "Punjab",
-    "salary": 35000
+ RequestBody: 
+ 
+ {
+    "name": "Chethan",
+    "age": "32",
+    "address": "California                                        ",
+    "salary": "46000"
 }
 
-Response Body:
+ResponseBody: 
+
 [
     {
         "statusCode": "200",
@@ -107,25 +98,18 @@ Response Body:
 ]
 
 
-![Screenshot from 2024-01-11 01-21-37](https://github.com/Sharathrao-Appmod/Assignment3-API/assets/155999647/cf3e9d09-0abc-483b-aad6-56ff31188cd2)
+DELETE: http://localhost:8080/api/v1/employees/12
 
-
-Method: DELETE
-http://localhost:8080/api/v1/employees/11
-
-Request Body:
- 
+RequestBody: 
 {
-    "id": 11
+    "id" : "12"
 }
 
-Response Body:
+ResponseBody: 
+
 {
     "DELETED": true
 }
-
-![Screenshot from 2024-01-11 01-29-59](https://github.com/Sharathrao-Appmod/Assignment3-API/assets/155999647/267c4d67-1795-470c-b9cd-ad0d77439c0a)
-
 
 
 

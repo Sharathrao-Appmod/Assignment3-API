@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sharath-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sharath-2
+  template:
+    metadata:
+      labels:
+        app: sharath-2
+    spec:
+      containers:
+        - name: sharath-2
+          image: asia-south1-docker.pkg.dev/niveustraining/sharath/niveustraining
+          ports:
+            - containerPort: 3000s
